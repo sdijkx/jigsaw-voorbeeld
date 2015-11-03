@@ -1,0 +1,3 @@
+module myclient {
+	requires myapi;
+}
