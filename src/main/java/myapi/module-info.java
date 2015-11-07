@@ -1,5 +1,5 @@
 module myapi {
-	exports myapi;
-	exports myapi.spi;
-		uses myapi.spi.MyServiceProvider;
+	exports nl.ordina.myapi;
+	requires public java.logging;
+	requires myapi.internal;
 }

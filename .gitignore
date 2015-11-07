@@ -4,3 +4,4 @@ myjmods/*
 mylibs/*
 .DS_Store
 .idea
+/nbproject/private/
