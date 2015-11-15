@@ -6,7 +6,7 @@ JAR=$JAVA_HOME/bin/jar
 
 rm -rf myjmods/*
 
-$JMOD create -mp target/mods --class-path target/mods/myapi.internal myjmods/myapi.internal.jmod
+$JMOD create -mp target/mods --class-path target/mods/myapi.formatter myjmods/myapi.formatter.jmod
 $JMOD create -mp target/mods --class-path target/mods/myapi myjmods/myapi.jmod
 $JMOD create -mp target/mods --class-path target/mods/myclient myjmods/myclient.jmod
 
@@ -17,7 +17,7 @@ echo
 
 rm -rf mylibs/*
 
-$JAR -c --archive=mylibs/myapi.internal.jar -C target/mods/myapi.internal .
+$JAR -c --archive=mylibs/myapi.formatter.jar -C target/mods/myapi.formatter .
 $JAR -c --archive=mylibs/myapi.jar -C target/mods/myapi .
 $JAR -c --archive=mylibs/myclient.jar -C target/mods/myclient .
 

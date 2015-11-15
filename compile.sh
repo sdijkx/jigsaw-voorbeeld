@@ -8,7 +8,8 @@ MODS=target/mods
 rm -rf $MODS
 mkdir $MODS
 
-$JAVAC -d $MODS  -modulesourcepath src/main/java  $(find src/main/java -name "*.java")
+$JAVAC -d $MODS  -modulesourcepath src/main/java\
+  $(find src/main/java -name "*.java")
 
 echo "Compiled files"
 tree $MODS

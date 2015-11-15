@@ -1,12 +1,18 @@
 package nl.ordina.myapi;
 
+import nl.ordina.myapi.impl.MyServiceImpl;
+
 import java.util.logging.Logger;
 
 public interface MyService {
 
-	//internal Calll
+	static MyService newInstance() {
+		return new MyServiceImpl();
+	}
+
+	//Public service calll
 	public String serviceCall();
-	//expose api from other module
+	//expose Logger api to other module
 	public Logger getServiceLogger();
 
 }
